@@ -30,9 +30,13 @@ struct GridView<Item, ItemView>: View where Item: Identifiable, ItemView: View {
     }
     
     func body(for item: Item, layout: GridLayout) -> some View {
-        let index = items.firstIndex(where: {$0.id == item.id}) ?? 0
-        return  viewForItem(item)
-            .frame(width: layout.itemSize.width, height: layout.itemSize.height)
-            .position(layout.location(ofItemAt: index))
+        let index = items.firstIndex(where: {$0.id == item.id})
+        return Group {
+            if index != nil {
+                viewForItem(item)
+                    .frame(width: layout.itemSize.width, height: layout.itemSize.height)
+                    .position(layout.location(ofItemAt: index!))
+            }
+        }
     }
 }

@@ -44,7 +44,7 @@ struct CardView: View {
                 RoundedRectangle(cornerRadius: cornerRadius).fill(Color.white)
                 RoundedRectangle(cornerRadius: cornerRadius).stroke(lineWidth: edgeLineWidth).foregroundColor(.orange)
                 Text(self.card.content) 
-            } else {
+            } else if !card.isMatched {
                 RoundedRectangle(cornerRadius: self.cornerRadius).foregroundColor(.orange)
             }
         }
