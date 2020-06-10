@@ -17,6 +17,8 @@
 		5ECF29292482E6D4001A1657 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5ECF29282482E6D4001A1657 /* Assets.xcassets */; };
 		5ECF292C2482E6D4001A1657 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5ECF292B2482E6D4001A1657 /* Preview Assets.xcassets */; };
 		5ECF292F2482E6D4001A1657 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ECF292D2482E6D4001A1657 /* LaunchScreen.storyboard */; };
+		5ED050FB248B9D5D001B644D /* Pie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED050FA248B9D5D001B644D /* Pie.swift */; };
+		5ED050FD248BB05E001B644D /* Cardify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED050FC248BB05E001B644D /* Cardify.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		5ECF292B2482E6D4001A1657 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5ECF292E2482E6D4001A1657 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5ECF29302482E6D4001A1657 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5ED050FA248B9D5D001B644D /* Pie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pie.swift; sourceTree = "<group>"; };
+		5ED050FC248BB05E001B644D /* Cardify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cardify.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,8 @@
 				5ECF29222482E6D1001A1657 /* AppDelegate.swift */,
 				5ECF29242482E6D1001A1657 /* SceneDelegate.swift */,
 				5ECF29262482E6D1001A1657 /* EmojiGameView.swift */,
+				5ED050FC248BB05E001B644D /* Cardify.swift */,
+				5ED050FA248B9D5D001B644D /* Pie.swift */,
 				5E682F9A24862C50003BA6AB /* MemoryGameModel.swift */,
 				5E682F9C24862E31003BA6AB /* EmojiVieModel.swift */,
 				5E6F52A32489274600E6EF7D /* GridView.swift */,
@@ -160,6 +166,8 @@
 			files = (
 				5E682F9B24862C50003BA6AB /* MemoryGameModel.swift in Sources */,
 				5ECF29232482E6D1001A1657 /* AppDelegate.swift in Sources */,
+				5ED050FB248B9D5D001B644D /* Pie.swift in Sources */,
+				5ED050FD248BB05E001B644D /* Cardify.swift in Sources */,
 				5ECF29252482E6D1001A1657 /* SceneDelegate.swift in Sources */,
 				5E6F52A42489274600E6EF7D /* GridView.swift in Sources */,
 				5E6F52A2248926BC00E6EF7D /* GridLayout.swift in Sources */,

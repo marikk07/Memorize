@@ -11,9 +11,8 @@ import Foundation
 class EmojiVieModel: ObservableObject {
     
    @Published private var model: MemoryGameModel<String> = createMemoryGame()
-       
     
-    static func createMemoryGame() -> MemoryGameModel<String> {
+    private static func createMemoryGame() -> MemoryGameModel<String> {
         let emojiArray = ["🥑", "🍉", "🍇"]
         return MemoryGameModel(pairsNumber: emojiArray.count) { pairIndex in
             return emojiArray[pairIndex]
@@ -26,5 +25,9 @@ class EmojiVieModel: ObservableObject {
     
     func selectCard(card: MemoryGameModel<String>.Card) {
         model.selectCard(card)
+    }
+    
+    func resetGame() {
+        model = EmojiVieModel.createMemoryGame()
     }
 }
