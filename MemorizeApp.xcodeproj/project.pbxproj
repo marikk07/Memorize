@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E3322B6249222BE00D9ED05 /* ThemesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3322B5249222BE00D9ED05 /* ThemesListView.swift */; };
+		5E3322B92492254700D9ED05 /* ThemeRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3322B82492254700D9ED05 /* ThemeRowView.swift */; };
+		5E3322BB2492257C00D9ED05 /* ThemeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3322BA2492257C00D9ED05 /* ThemeModel.swift */; };
+		5E3322BD249233A000D9ED05 /* ThemeRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3322BC249233A000D9ED05 /* ThemeRowViewModel.swift */; };
+		5E3322BF2492477C00D9ED05 /* ThemesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3322BE2492477C00D9ED05 /* ThemesListViewModel.swift */; };
 		5E682F9B24862C50003BA6AB /* MemoryGameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E682F9A24862C50003BA6AB /* MemoryGameModel.swift */; };
 		5E682F9D24862E31003BA6AB /* EmojiVieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E682F9C24862E31003BA6AB /* EmojiVieModel.swift */; };
 		5E6F52A2248926BC00E6EF7D /* GridLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6F52A1248926BC00E6EF7D /* GridLayout.swift */; };
@@ -22,6 +27,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5E3322B5249222BE00D9ED05 /* ThemesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemesListView.swift; sourceTree = "<group>"; };
+		5E3322B82492254700D9ED05 /* ThemeRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeRowView.swift; sourceTree = "<group>"; };
+		5E3322BA2492257C00D9ED05 /* ThemeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeModel.swift; sourceTree = "<group>"; };
+		5E3322BC249233A000D9ED05 /* ThemeRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeRowViewModel.swift; sourceTree = "<group>"; };
+		5E3322BE2492477C00D9ED05 /* ThemesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemesListViewModel.swift; sourceTree = "<group>"; };
 		5E682F9A24862C50003BA6AB /* MemoryGameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGameModel.swift; sourceTree = "<group>"; };
 		5E682F9C24862E31003BA6AB /* EmojiVieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiVieModel.swift; sourceTree = "<group>"; };
 		5E6F52A1248926BC00E6EF7D /* GridLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridLayout.swift; sourceTree = "<group>"; };
@@ -49,6 +59,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E3322B12492205500D9ED05 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5E6F52A32489274600E6EF7D /* GridView.swift */,
+				5ECF29262482E6D1001A1657 /* EmojiGameView.swift */,
+				5E3322B72492252E00D9ED05 /* ThemesView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5E3322B22492208300D9ED05 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5E3322B4249220D600D9ED05 /* Modifiers */,
+				5E6F52A1248926BC00E6EF7D /* GridLayout.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		5E3322B3249220AF00D9ED05 /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				5ED050FA248B9D5D001B644D /* Pie.swift */,
+			);
+			path = Shapes;
+			sourceTree = "<group>";
+		};
+		5E3322B4249220D600D9ED05 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				5ED050FC248BB05E001B644D /* Cardify.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		5E3322B72492252E00D9ED05 /* ThemesView */ = {
+			isa = PBXGroup;
+			children = (
+				5E3322B5249222BE00D9ED05 /* ThemesListView.swift */,
+				5E3322BE2492477C00D9ED05 /* ThemesListViewModel.swift */,
+				5E3322B82492254700D9ED05 /* ThemeRowView.swift */,
+				5E3322BC249233A000D9ED05 /* ThemeRowViewModel.swift */,
+			);
+			path = ThemesView;
+			sourceTree = "<group>";
+		};
 		5ECF29162482E6D1001A1657 = {
 			isa = PBXGroup;
 			children = (
@@ -70,13 +126,12 @@
 			children = (
 				5ECF29222482E6D1001A1657 /* AppDelegate.swift */,
 				5ECF29242482E6D1001A1657 /* SceneDelegate.swift */,
-				5ECF29262482E6D1001A1657 /* EmojiGameView.swift */,
-				5ED050FC248BB05E001B644D /* Cardify.swift */,
-				5ED050FA248B9D5D001B644D /* Pie.swift */,
+				5E3322BA2492257C00D9ED05 /* ThemeModel.swift */,
+				5E3322B3249220AF00D9ED05 /* Shapes */,
+				5E3322B22492208300D9ED05 /* Helpers */,
+				5E3322B12492205500D9ED05 /* Views */,
 				5E682F9A24862C50003BA6AB /* MemoryGameModel.swift */,
 				5E682F9C24862E31003BA6AB /* EmojiVieModel.swift */,
-				5E6F52A32489274600E6EF7D /* GridView.swift */,
-				5E6F52A1248926BC00E6EF7D /* GridLayout.swift */,
 				5ECF29282482E6D4001A1657 /* Assets.xcassets */,
 				5ECF292D2482E6D4001A1657 /* LaunchScreen.storyboard */,
 				5ECF29302482E6D4001A1657 /* Info.plist */,
@@ -164,15 +219,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E3322B6249222BE00D9ED05 /* ThemesListView.swift in Sources */,
 				5E682F9B24862C50003BA6AB /* MemoryGameModel.swift in Sources */,
 				5ECF29232482E6D1001A1657 /* AppDelegate.swift in Sources */,
+				5E3322BB2492257C00D9ED05 /* ThemeModel.swift in Sources */,
 				5ED050FB248B9D5D001B644D /* Pie.swift in Sources */,
 				5ED050FD248BB05E001B644D /* Cardify.swift in Sources */,
 				5ECF29252482E6D1001A1657 /* SceneDelegate.swift in Sources */,
+				5E3322B92492254700D9ED05 /* ThemeRowView.swift in Sources */,
 				5E6F52A42489274600E6EF7D /* GridView.swift in Sources */,
 				5E6F52A2248926BC00E6EF7D /* GridLayout.swift in Sources */,
+				5E3322BF2492477C00D9ED05 /* ThemesListViewModel.swift in Sources */,
 				5ECF29272482E6D1001A1657 /* EmojiGameView.swift in Sources */,
 				5E682F9D24862E31003BA6AB /* EmojiVieModel.swift in Sources */,
+				5E3322BD249233A000D9ED05 /* ThemeRowViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
