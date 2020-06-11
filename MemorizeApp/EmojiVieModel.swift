@@ -13,8 +13,8 @@ class EmojiVieModel: ObservableObject {
    @Published private var model: MemoryGameModel<String> = createMemoryGame()
     
     private static func createMemoryGame() -> MemoryGameModel<String> {
-        let emojiArray = ["🥑", "🍉", "🍇"]
-        return MemoryGameModel(pairsNumber: emojiArray.count) { pairIndex in
+        let emojiArray = ["🥑", "🍉", "🍇", "🧅", "🥦", "🌽", "🌶"].shuffled()
+        return MemoryGameModel(pairsNumber: Int.random(in: 2...emojiArray.count)) { pairIndex in
             return emojiArray[pairIndex]
         }
     }

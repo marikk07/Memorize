@@ -34,7 +34,7 @@ struct GridView<Item, ItemView>: View where Item: Identifiable, ItemView: View {
         return Group {
             if index != nil {
                 viewForItem(item)
-                    .frame(width: layout.itemSize.width, height: layout.itemSize.height)
+                    .frame(width: min(layout.itemSize.height, layout.itemSize.width) * 2/3, height: min(layout.itemSize.height, layout.itemSize.width))
                     .position(layout.location(ofItemAt: index!))
             }
         }

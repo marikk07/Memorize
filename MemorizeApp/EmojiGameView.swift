@@ -16,7 +16,7 @@ struct EmojiGameView: View {
         VStack {
             GridView(viewModel.cards) { card in
                 CardView(card: card).onTapGesture {
-                    withAnimation(.easeIn(duration: 1.2)) { self.viewModel.selectCard(card: card) }
+                    withAnimation(.easeIn(duration: 0.75)) { self.viewModel.selectCard(card: card) }
                 }.padding(5)
             }
             Button("Reset") {
@@ -62,6 +62,7 @@ struct CardView: View {
                 } else {
                     Pie(startAngle: Angle.degrees(0-90), endAngle: Angle.degrees(-card.bonusRemaining*360-90))
                     .padding(5).opacity(0.4)
+                    .transition(.scale)
                 }
                 Text(self.card.content)
                 .font(Font.system(size: min(size.width, size.height) * scaleFactor))
