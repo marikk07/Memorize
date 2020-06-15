@@ -24,7 +24,14 @@ struct EmojiGameView: View {
             }
         }
         .padding()
-        .foregroundColor(.orange)
+        .foregroundColor(viewModel.color)
+        .navigationBarTitle(viewModel.title)
+        .navigationBarItems(trailing:
+            Button("New Game") {
+                withAnimation { self.viewModel.newRandomGame() }
+            }
+        )
+
     }
 }
 
@@ -77,7 +84,7 @@ struct CardView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        let model = EmojiVieModel()
+        let model = EmojiVieModel(theme: .init(type: .faces))
         model.selectCard(card: model.cards[0])
         return EmojiGameView(viewModel: model)
     }

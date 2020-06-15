@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E289F2C2497784300BD469D /* ThemeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E289F2B2497784300BD469D /* ThemeService.swift */; };
 		5E3322B6249222BE00D9ED05 /* ThemesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3322B5249222BE00D9ED05 /* ThemesListView.swift */; };
 		5E3322B92492254700D9ED05 /* ThemeRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3322B82492254700D9ED05 /* ThemeRowView.swift */; };
 		5E3322BB2492257C00D9ED05 /* ThemeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3322BA2492257C00D9ED05 /* ThemeModel.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5E289F2B2497784300BD469D /* ThemeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeService.swift; sourceTree = "<group>"; };
 		5E3322B5249222BE00D9ED05 /* ThemesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemesListView.swift; sourceTree = "<group>"; };
 		5E3322B82492254700D9ED05 /* ThemeRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeRowView.swift; sourceTree = "<group>"; };
 		5E3322BA2492257C00D9ED05 /* ThemeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeModel.swift; sourceTree = "<group>"; };
@@ -59,11 +61,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E289F2A2497783000BD469D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				5E289F2B2497784300BD469D /* ThemeService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		5E3322B12492205500D9ED05 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				5E6F52A32489274600E6EF7D /* GridView.swift */,
 				5ECF29262482E6D1001A1657 /* EmojiGameView.swift */,
+				5E682F9C24862E31003BA6AB /* EmojiVieModel.swift */,
 				5E3322B72492252E00D9ED05 /* ThemesView */,
 			);
 			path = Views;
@@ -127,11 +138,11 @@
 				5ECF29222482E6D1001A1657 /* AppDelegate.swift */,
 				5ECF29242482E6D1001A1657 /* SceneDelegate.swift */,
 				5E3322BA2492257C00D9ED05 /* ThemeModel.swift */,
+				5E289F2A2497783000BD469D /* Service */,
 				5E3322B3249220AF00D9ED05 /* Shapes */,
 				5E3322B22492208300D9ED05 /* Helpers */,
 				5E3322B12492205500D9ED05 /* Views */,
 				5E682F9A24862C50003BA6AB /* MemoryGameModel.swift */,
-				5E682F9C24862E31003BA6AB /* EmojiVieModel.swift */,
 				5ECF29282482E6D4001A1657 /* Assets.xcassets */,
 				5ECF292D2482E6D4001A1657 /* LaunchScreen.storyboard */,
 				5ECF29302482E6D4001A1657 /* Info.plist */,
@@ -224,6 +235,7 @@
 				5ECF29232482E6D1001A1657 /* AppDelegate.swift in Sources */,
 				5E3322BB2492257C00D9ED05 /* ThemeModel.swift in Sources */,
 				5ED050FB248B9D5D001B644D /* Pie.swift in Sources */,
+				5E289F2C2497784300BD469D /* ThemeService.swift in Sources */,
 				5ED050FD248BB05E001B644D /* Cardify.swift in Sources */,
 				5ECF29252482E6D1001A1657 /* SceneDelegate.swift in Sources */,
 				5E3322B92492254700D9ED05 /* ThemeRowView.swift in Sources */,

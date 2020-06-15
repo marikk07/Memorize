@@ -10,11 +10,9 @@ import Foundation
 
 class ThemesListViewModel {
     
-    let dataArray: [ThemeModel] = [ThemeModel(type: .faces),
-                                   ThemeModel(type: .flags),
-                                   ThemeModel(type: .food),
-                                   ThemeModel(type: .halloween),
-                                   ThemeModel(type: .places),
-                                   ThemeModel(type: .vehicles)]
+    let themeService = ThemeService()
     
+    func getThemes() -> [ThemeModel] {
+        themeService.getAllThemes()
+    }
 }

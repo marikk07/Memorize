@@ -13,15 +13,11 @@ struct ThemesListView: View {
     let viewModel = ThemesListViewModel()
     
     var body: some View {
-        let game = EmojiVieModel()
-        let contentView = EmojiGameView(viewModel: game)
-        
         return NavigationView {
-            List(viewModel.dataArray) { data in
-                NavigationLink(destination: contentView) {
+            List(viewModel.getThemes()) { data in
+                NavigationLink(destination: EmojiGameView(viewModel: EmojiVieModel(theme: data))) {
                      ThemeRowView(viewModel: ThemeRowViewModel(data))
                 }
-               
             }.navigationBarTitle("Themes")
         }
     }
